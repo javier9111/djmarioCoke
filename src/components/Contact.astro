@@ -1,9 +1,57 @@
-<section id="contacto" class="bg-background text-text py-20">
-    <h2 class="text-3xl font-bold text-center mb-10">Contáctanos</h2>
-    <div class="text-center">
-      <p class="mb-4">📞 Teléfono: 55 1234 5678</p>
-      <p class="mb-4">📧 Email: contacto@djmariococa.com</p>
-      <a href="https://wa.me/5215512345678" class="bg-primary text-background px-6 py-2 rounded hover:bg-yellow-600">Enviar mensaje por WhatsApp</a>
+---
+---
+
+<section id="contacto" class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Contacto</h2>
+    <p class="text-xl text-center text-black-300 mb-12 max-w-2xl mx-auto">¿Listo para llevar tu evento al siguiente nivel? Contáctame ahora.</p>
+    
+    <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <div class="md:flex">
+        <div class="md:w-1/2 bg-purple-900 p-8 flex flex-col justify-center">
+          <h3 class="text-2xl font-bold mb-4 text-white ">Información de contacto</h3>
+          <div class="mb-6">
+            <p class="text-gray-300"><span class="font-semibold">Email:</span> contacto@djnombredj.com</p>
+            <p class="text-gray-300"><span class="font-semibold">Teléfono:</span> +1 234 567 890</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-2 text-white ">Sígueme</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-purple-300">Instagram</a>
+              <a href="#" class="text-white hover:text-purple-300">SoundCloud</a>
+              <a href="#" class="text-white hover:text-purple-300">Mixcloud</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 p-8">
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block mb-2 text-white ">Nombre</label>
+              <input type="text" id="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div>
+              <label for="email" class="block mb-2 text-white ">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div>
+              <label for="event" class="block mb-2 text-white ">Tipo de Evento</label>
+              <select id="event" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-purple-500 text-white ">
+                <option>Boda</option>
+                <option>Fiesta Privada</option>
+                <option>Evento Corporativo</option>
+                <option>Club/Bar</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block mb-2 text-white ">Mensaje</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded font-semibold transition">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
     </div>
-  </section>
-  
+  </div>
+</section>

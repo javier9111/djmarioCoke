@@ -1,18 +1,41 @@
-<section id="servicios" class="bg-background text-text py-20">
-    <h2 class="text-3xl font-bold text-center mb-10">Servicios</h2>
-    <div class="grid md:grid-cols-3 gap-8 px-4">
-      <div class="bg-gray-800 p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Bodas</h3>
-        <p>Ambientación musical personalizada para tu día especial.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Eventos Corporativos</h3>
-        <p>Sonido profesional para conferencias, lanzamientos y más.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Fiestas Privadas</h3>
-        <p>La mejor música para cumpleaños, aniversarios y reuniones.</p>
-      </div>
+---
+const services = [
+  {
+    title: "Bodas",
+    description: "Creo la atmósfera perfecta para tu día especial con una mezcla de romanticismo y diversión.",
+    icon: "🎵"
+  },
+  {
+    title: "Fiestas Privadas",
+    description: "Desde cumpleaños hasta aniversarios, llevo la energía adecuada para tu celebración.",
+    icon: "🎉"
+  },
+  {
+    title: "Eventos Corporativos",
+    description: "Música profesional para conferencias, lanzamientos de producto y fiestas de empresa.",
+    icon: "💼"
+  },
+  {
+    title: "Club Nights",
+    description: "Sets electrónicos diseñados para mantener la pista de baile llena toda la noche.",
+    icon: "🕺"
+  }
+];
+---
+
+<section id="servicios" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4 text-white">Mis Servicios</h2>
+    <p class="text-xl text-center text-gray-300 mb-12 max-w-2xl mx-auto">Ofrezco experiencias musicales personalizadas para cada tipo de evento.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {services.map((service) => (
+        <div class="bg-gray-800 p-8 rounded-lg hover:bg-purple-900 transition group">
+          <div class="text-4xl mb-4 group-hover:scale-110 transition">{service.icon}</div>
+          <h3 class="text-2xl font-bold mb-2 text-white">{service.title}</h3>
+          <p class="text-gray-300">{service.description}</p>
+        </div>
+      ))}
     </div>
-  </section>
-  
+  </div>
+</section>

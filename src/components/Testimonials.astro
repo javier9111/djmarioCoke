@@ -1,10 +1,46 @@
-<section class="bg-background text-text py-20">
-    <h2 class="text-3xl font-bold text-center mb-10">Testimonios</h2>
-    <div class="max-w-2xl mx-auto px-4">
-      <blockquote class="italic border-l-4 border-primary pl-4 mb-6">
-        "¡La música fue increíble y mantuvo a todos bailando toda la noche!"
-      </blockquote>
-      <p class="text-right">- Cliente Satisfecho</p>
+---
+const testimonials = [
+  {
+    name: "Javier Robles",
+    event: "Boda",
+    quote: "DJ Coca hizo de nuestra boda una experiencia increíble. Todos nuestros invitados no paraban de bailar.",
+    stars: 5
+  },
+  {
+    name: "Carlos Martínez",
+    event: "Fiesta de 30 años",
+    quote: "La energía que trajo a mi fiesta fue espectacular. Contrataría sus servicios una y otra vez.",
+    stars: 5
+  },
+  {
+    name: "TechCorp Inc.",
+    event: "Evento corporativo",
+    quote: "Profesionalismo y talento. Nuestros empleados disfrutaron muchísimo de la fiesta de fin de año.",
+    stars: 4
+  }
+];
+---
+
+<section id="testimonios" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4 text-white">Testimonios</h2>
+    <p class="text-xl text-center text-gray-300 mb-12 max-w-2xl mx-auto">Lo que dicen mis clientes sobre mi trabajo.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {testimonials.map((testimonial) => (
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="flex mb-4">
+            {[...Array(testimonial.stars)].map(() => (
+              <span class="text-yellow-400">★</span>
+            ))}
+          </div>
+          <p class="text-gray-300 italic mb-4">"{testimonial.quote}"</p>
+          <div class="border-t border-gray-700 pt-4">
+            <p class="font-bold text-white">{testimonial.name}</p>
+            <p class="text-sm text-gray-400">{testimonial.event}</p>
+          </div>
+        </div>
+      ))}
     </div>
-  </section>
-  
+  </div>
+</section>

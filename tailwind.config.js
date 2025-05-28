@@ -1,15 +1,20 @@
-// tailwind.config.js
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+      './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'
+    ],
     theme: {
       extend: {
         colors: {
-          primary: '#FFD700', // Dorado
-          background: '#000000', // Negro
-          text: '#FFFFFF', // Blanco
+          purple: {
+            500: '#8B5CF6',
+            600: '#7C3AED',
+            700: '#6D28D9',
+            800: '#5B21B6',
+            900: '#4C1D95',
+          },
         },
       },
     },
-    content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
     plugins: [],
-  };
-  
+  }
