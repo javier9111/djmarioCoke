@@ -5,19 +5,22 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.5",
     "@tailwindcss/vite": "^4.1.5",
-    "astro": "^5.7.12",
-    "flowbite": "^3.1.2"
+    "astro": "^5.7.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.40",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5"
   }
+  
 }

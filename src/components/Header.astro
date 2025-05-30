@@ -1,7 +1,9 @@
 ---
+import '../styles/header.css';
+
 const navLinks = [
-  { name: 'Servicios', href: '#servicios' },
   { name: 'Galería', href: '#galeria' },
+  { name: 'Servicios', href: '#servicios' },
   { name: 'Testimonios', href: '#testimonios' },
   { name: 'Contacto', href: '#contacto' },
 ];
@@ -13,7 +15,7 @@ const navLinks = [
     
     <div class="hidden md:flex space-x-8">
       {navLinks.map((link) => (
-        <a href={link.href} class="text-white hover:text-purple-400 transition">{link.name}</a>
+        <a href={link.href} class="text-white hover:text-purple-400 " data-astro-transition="animate">{link.name}</a>
       ))}
     </div>
     
@@ -23,4 +25,4 @@ const navLinks = [
       </svg>
     </button>
   </nav>
-</header>
+</header> 

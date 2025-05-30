@@ -1,3 +1,13 @@
 @import "tailwindcss";
-@import "flowbite/src/themes/default";
 @plugin "daisyui";
+
+/* Scroll suave para toda la página */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Transición para las secciones */
+  section {
+    scroll-margin-top: 50px; /* Ajusta según la altura de tu header */
+    transition: all 0.5s ease;
+  }

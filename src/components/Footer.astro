@@ -1,6 +1,31 @@
 ---
+const  attribute = [
+  {
+    alt: "party",
+    link: "https://www.flaticon.com/free-icons/party", 
+    title: "Party icons",
+    name: "Party icons created by Freepik - Flaticon",
+  },
+  {
+    alt: "wedding",
+    link: "https://www.flaticon.com/free-icons/bride", 
+    title: "Wedding icons",
+    name: "Wedding icons created by Freepik - Flaticon",
+  },
+  {
+    alt: "event",
+    link: "https://www.flaticon.com/free-icons/event", 
+    title: "Event icons",
+    name: "Event icons created by Freepik - Flaticon",
+  },
+  {
+    alt: "night-club",
+    link: "https://www.flaticon.com/free-icons/night-club", 
+    title: "Night Club icons",
+    name: "Night Club icons created by Freepik - Flaticon",
+  }
+]
 ---
-
 <footer class="bg-black py-12 border-t border-gray-800">
   <div class="container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
@@ -10,10 +35,21 @@
       </div>
       <div class="flex space-x-6">
         <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
-        <a href="#" class="text-gray-400 hover:text-white transition">SoundCloud</a>
-        <a href="#" class="text-gray-400 hover:text-white transition">Mixcloud</a>
+        <a href="#" class="text-gray-400 hover:text-white transition">Facebook</a>
         <a href="#" class="text-gray-400 hover:text-white transition">WhatsApp</a>
       </div>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-white mt-8">Atribuciones</h3>
+      <ul class="list-disc list-inside text-gray-400 mt-2">
+        {attribute.map((attr) => (
+          <li>
+            <a href={attr.link} target="_blank" rel="noopener noreferrer" class="hover:underline text-purple-500">
+              {attr.name}
+            </a> - {attr.title}
+          </li>
+        ))}
+      </ul>
     </div>
     <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
       <p>&copy; {new Date().getFullYear()} DJ Coca. Todos los derechos reservados.</p>

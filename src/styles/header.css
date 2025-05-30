@@ -1,0 +1,15 @@
+/* Efecto al llegar a la sección */
+section:target {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0.9; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Resaltar enlace activo */
+  a[href].active {
+    color: #8B5CF6;
+    font-weight: bold;
+  }
