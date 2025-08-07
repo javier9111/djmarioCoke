@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL || '';
+const whatsappURL = `${base}/icons/whatsapp-96.png`;
 ---
 
 <section id="contacto" class="py-20">
@@ -10,10 +12,6 @@
       <div class="md:flex">
         <div class="md:w-1/2 bg-purple-900 p-8 flex flex-col justify-center">
           <h3 class="text-2xl font-bold mb-4 text-white ">Información de contacto</h3>
-          <div class="mb-6">
-            <p class="text-gray-300"><span class="font-semibold">Email:</span> contacto@djnombredj.com</p>
-            <p class="text-gray-300"><span class="font-semibold">Teléfono:</span> +1 234 567 890</p>
-          </div>
           <div>
             <h4 class="text-xl font-bold mb-2 text-white ">Sígueme</h4>
             <div class="flex space-x-4">
@@ -26,9 +24,7 @@
         
         <div class="md:w-1/2 p-8">
           <a href="https://wa.me/1234567890" target="_blank" class="text-white hover:text-purple-300 flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.105 1.516 5.84L0 24l6.293-1.516A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.422 17.422l-.003.003c-.293.293-.68.293-.973 0l-1.516-1.516c-.293-.293-.293-.68 0-.973l.003-.003c.293-.293.68-.293.973 0l1.516 1.516c.293.293.293.68 0 .973zm-2.422-2.422l-.003.003c-.293.293-.68.293-.973 0l-1.516-1.516c-.293-.293-.293-.68 0-.973l.003-.003c.293-.293.68-.293.973 0l1.516 1.516c.293.293.293.68 0 .973z"/>
-            </svg>
+            <img src=`${whatsappURL}`/>
             <span>WhatsApp</span>
           </a>
           <!-- <form class="space-y-6">
