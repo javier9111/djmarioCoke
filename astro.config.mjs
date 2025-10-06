@@ -9,7 +9,8 @@ export default defineConfig({
   outDir: './dist',
   trailingSlash: 'ignore',
   build: {
-    format: 'directory'
+    format: 'directory',
+    sourcemap: false
   },
     vite: {
         plugins: [tailwindcss()],

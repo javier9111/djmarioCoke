@@ -1,0 +1,48 @@
+---
+// src/pages/404.astro
+import Layout from '../src/layouts/Layout.astro'; // Ajusta la ruta según tu estructura
+---
+
+<Layout title="Página No Encontrada - Banana Power">
+  <section class="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex items-center justify-center py-20">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-2xl mx-auto">
+        <!-- Logo o imagen relacionada con DJ -->
+        <div class="mb-8">
+          <div class="w-32 h-32 mx-auto bg-yellow-400 rounded-full flex items-center justify-center text-4xl">
+            🎧
+          </div>
+        </div>
+        
+        <h1 class="text-8xl font-bold text-yellow-400 mb-4">404</h1>
+        <h2 class="text-3xl font-bold mb-6">Página Fuera de Frecuencia</h2>
+        
+        <p class="text-xl mb-8 text-gray-300">
+          Lo sentimos, la página que buscas no está disponible. 
+          Puede que haya sido removida o la URL sea incorrecta.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/" 
+            class="bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 transition-colors"
+          >
+            Ir al Inicio
+          </a>
+          <a 
+            href="/#services" 
+            class="border-2 border-yellow-400 text-yellow-400 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition-colors"
+          >
+            Ver Servicios
+          </a>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-gray-700">
+          <p class="text-sm text-gray-400">
+            ¿Necesitas ayuda? <a href="/contact" class="text-yellow-400 hover:underline">Contáctanos</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
