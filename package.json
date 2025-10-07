@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "build:gh": "astro build --config astro.config.gh.mjs",
+    "deploy:gh": "npm run build:gh && gh-pages -d dist",
+    
     "preview": "astro preview",
     "astro": "astro"
   },
